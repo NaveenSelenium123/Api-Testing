@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1262" started-at="2022-09-01T06:20:43Z" finished-at="2022-09-01T06:20:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1262" started-at="2022-09-01T06:20:43Z" finished-at="2022-09-01T06:20:44Z">
+      <class name="org.com.All">
+        <test-method status="PASS" signature="Employee1()[pri:0, instance:org.com.All@1810399e]" name="Employee1" duration-ms="1248" started-at="2022-09-01T11:50:43Z" finished-at="2022-09-01T11:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Employee1 -->
+      </class> <!-- org.com.All -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
