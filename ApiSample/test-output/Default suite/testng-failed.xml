@@ -5,7 +5,7 @@
     <classes>
       <class name="org.com.All">
         <methods>
-          <include name="Employee"/>
+          <include name="Employee1"/>
         </methods>
       </class> <!-- org.com.All -->
     </classes>

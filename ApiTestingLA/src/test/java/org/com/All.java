@@ -17,14 +17,14 @@ private void Employee() throws InterruptedException {
 	System.out.println(response.asPrettyString());	
 	System.out.println(response.getStatusLine());	
 }
-	@Test
+	@Test(enabled=false)
 	private void Employee1() {
 		RestAssured.baseURI="http://localhost:3000/";
 		RequestSpecification  requestSpecification= 
 				RestAssured.given()
 				.header("Content-Type","application/json")
 				.body("{\r\n" + 
-						"    \"id\": 108891,\r\n" + 
+						"    \"id\": 5,\r\n" + 
 						"    \"first_name\": \"Ann41\",\r\n" + 
 						"    \"last_name\": \"Smith14\",\r\n" + 
 						"    \"email\": \"ann14@codingthesmartway.com\"\r\n" + 
@@ -49,5 +49,19 @@ private void Employee() throws InterruptedException {
 		System.out.println(response.asPrettyString());	
 		System.out.println(response.getStatusLine());	
 
+	}
+	@Test(enabled=false)
+	public void deleteAnEmployee() {
+		RestAssured.baseURI="http://localhost:3000/";
+		RequestSpecification  requestSpecification= RestAssured.given();
+		Response  response= requestSpecification.request(Method.DELETE,"employees/1");
+		System.out.println(response.asPrettyString());	
+	}
+	@Test
+	public void getAnEmployee() {
+		RestAssured.baseURI="http://localhost:3000/";
+		RequestSpecification  requestSpecification= RestAssured.given();
+		Response  response= requestSpecification.request(Method.GET,"employees/5");
+		System.out.println(response.asPrettyString());	
 	}
 }
