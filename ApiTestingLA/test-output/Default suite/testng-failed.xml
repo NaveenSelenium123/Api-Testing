@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.com.All">
+      <class name="com.ems.Schema.Validation.schemaNetworkNtValidate">
         <methods>
-          <include name="Employee"/>
+          <include name="jsonSchema"/>
         </methods>
-      </class> <!-- org.com.All -->
+      </class> <!-- com.ems.Schema.Validation.schemaNetworkNtValidate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

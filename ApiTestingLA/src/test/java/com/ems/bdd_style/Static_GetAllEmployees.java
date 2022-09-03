@@ -18,33 +18,33 @@ public class Static_GetAllEmployees {
 		.get("/employees")
 		.prettyPrint();
 	}
-	@Test
-	private void createAnEmployeeBDD() {
+	@Test(enabled=false)
+	private void createAnEmployeeBDD() {    //POST 
 			    given()
 			    .baseUri("http://localhost:3000")
 				.header("Content-Type","application/json")
 				.body("{\r\n" + 
-						"    \"id\": 565,\r\n" + 
-						"    \"first_name\": \"Naveen4\",\r\n" + 
-						"    \"last_name\": \"Smith144\",\r\n" + 
-						"    \"email\": \"ann14784@codingthesmartway.com\"\r\n" + 
+						"    \"id\": 56553,\r\n" + 
+						"    \"first_name\": \"N2aveen4\",\r\n" + 
+						"    \"last_name\": \"Sm3ith144\",\r\n" + 
+						"    \"email\": \"ann147834@codingthesmartway.com\"\r\n" + 
 						"  }")
 				.when()
 				.post("/employees")
 				.prettyPrint();
 	}
 	@Test(enabled=false)
-	private void updateAnEmployee() {
+	private void updateAnEmployee() {    //PUT
 		given()
 	    .baseUri("http://localhost:3000")
 		.header("Content-Type","application/json")
 		.body("{\r\n" +
-				"    \"first_name\": \"Ajay1\",\r\n" + 
-				"    \"last_name\": \"Teen1a\",\r\n" + 
-				"    \"email\": \"teen1a@codingthesmartway.com\"\r\n" + 
+				"    \"first_name\": \"Ajay12323\",\r\n" + 
+				"    \"last_name\": \"Teen1aQWQ\",\r\n" + 
+				"    \"email\": \"teen1aQWQW@codingthesmartway.com\"\r\n" + 
 				"  }")
 		.when()
-		.put("/employees/2108006")
+		.put("/employees/56553")
 		.prettyPrint();	
 	}
 	@Test(enabled=false)
@@ -55,7 +55,7 @@ public class Static_GetAllEmployees {
 		.delete("/employees/2108006")
 		.prettyPrint();
 	}
-	@Test(enabled=false)
+	@Test
 	private void createEmployeeFromJson() {
 		File jsonFile=new  File("db1.json");
 		given()
